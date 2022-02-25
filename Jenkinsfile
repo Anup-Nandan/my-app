@@ -14,7 +14,7 @@ node{
 	          sh "${mvnHome}/bin/mvn sonar:sonar"
 	        }
 	    }
-   stage('Build Docker Imager'){
+   stage('Build Docker Images'){
    sh 'docker build -t saidamo/myweb:0.0.2 .'
    }
    stage('Docker Image Push'){
