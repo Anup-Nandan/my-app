@@ -34,7 +34,7 @@ node{
 	}catch(error){
 		//  do nothing if there is an exception
 	}
-   stage('Final Docker deployment'){
+   stage('Final Docker deployments'){
    sh 'docker run -d -p 8090:8080 --name tomcattest saidamo/myweb:0.0.2' 
    }
 }
